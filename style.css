@@ -11,8 +11,9 @@ body {
 header {
     background-color: #1f2937;
     display: flex;
-    justify-content: space-between;
-    padding: 0 253px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* padding: 0 253px; */
 }
 
 .nav-logo {
@@ -41,14 +42,16 @@ a {
 main {
     background-color: #1f2937;
     color: #f9faf8;
-    padding: 100px 253px;
+    /* padding: 100px 253px; */
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .hero-info {
-    width: 500px;
+    width: 455px;
 }
 
 h1 {
@@ -77,7 +80,7 @@ main button {
 
 .hero-img-ph {
     height: 250px;
-    width: 500px;
+    width: 455px;
     background-color: #6e747c;
     display: flex;
     justify-content: center;
@@ -102,6 +105,7 @@ main button {
     display: flex;
     justify-content: center;
     gap: 75px;
+    flex-wrap: wrap;
     
 }
 
@@ -160,27 +164,31 @@ span {
     align-items: center;
 }
 
+.action-card {
+    background-color: #3882f6;
+    color: #fff;
+    width: 700px;
+    padding: 50px 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.action-info-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
 .action-container button {
     background-color: #3882f6;
     color: #fff;
     padding: 5px 30px;
     border: 1px solid #fff;
     border-radius: 5px;
-}
-
-.action-card {
-    background-color: #3882f6;
-    color: #fff;
-    padding: 50px 150px;
-    display: flex;
-    align-items: center;
-    gap: 200px;
-    border-radius: 10px;
-}
-
-.action-info-container {
-    display: flex;
-    flex-direction: column;
 }
 
 .action-info-container h3,
